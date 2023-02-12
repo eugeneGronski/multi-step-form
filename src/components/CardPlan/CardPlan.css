@@ -1,0 +1,27 @@
+.card-container {
+    height: 200px;
+    width: 160px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    padding: 20px;
+}
+
+.card-container-active {
+    border: 2px solid darkblue;
+    background-color: lavender;
+}
+
+.price-text {
+    color: gray;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.plan-name {
+    font: url('../../assets/fonts/Ubuntu-Bold.ttf');
+    font-size: 18px;
+}
