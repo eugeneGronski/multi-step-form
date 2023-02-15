@@ -14,4 +14,4 @@ Open [This link](https://multi-step-form-navy.vercel.app/) to view the form in t
 
 ## Short demo
 
-[](https://github.com/eugeneGronski/multi-step-form/blob/main/design/MSF.gif)
+![](https://github.com/eugeneGronski/multi-step-form/blob/main/design/MSF.gif)
