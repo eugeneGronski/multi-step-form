@@ -1,27 +1,27 @@
 .round {
-    height: 36px;
-    width: 36px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    border: 2px solid white;
-    color: white;
+  height: 36px;
+  width: 36px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
 }
 
 .round-active {
-    height: 36px;
-    width: 36px;
-    background-color: lightblue;
-    color: black;
-    border-radius: 50%;
-    display: inline-block;
-    border: 2px solid white;
+  height: 36px;
+  width: 36px;
+  background-color: lightblue;
+  color: black;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid white;
 }
 
 .round:hover {
-    cursor: default;
+  cursor: default;
 }
 
 .round-active:hover {
-    cursor: default;
+  cursor: default;
 }

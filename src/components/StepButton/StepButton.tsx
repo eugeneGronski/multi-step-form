@@ -1,10 +1,10 @@
-import "./StepButton.css";
+import './StepButton.css'
 
 interface StepButtonData {
-  step: number;
-  title: string;
-  subtitle: string;
-  isActiveStep: boolean;
+  step: number
+  title: string
+  subtitle: string
+  isActiveStep: boolean
   onClick?: any
 }
 
@@ -13,14 +13,16 @@ export const StepButton: React.FC<StepButtonData> = ({
   title,
   subtitle,
   isActiveStep,
-  onClick
+  onClick,
 }) => {
   return (
     <>
       <div className="flex mt-4 ml-5">
         <div className="flex flex-wrap content-center">
           <button
-            className={`${isActiveStep ? "round-active" : "round"} border-white`}
+            className={`${
+              isActiveStep ? 'round-active' : 'round'
+            } border-white`}
             // for debug only
             // onClick={onClick}
           >
@@ -33,5 +35,5 @@ export const StepButton: React.FC<StepButtonData> = ({
         </div>
       </div>
     </>
-  );
-};
+  )
+}

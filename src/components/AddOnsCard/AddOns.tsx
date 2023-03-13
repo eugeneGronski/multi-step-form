@@ -1,16 +1,16 @@
-import React, { Dispatch, useEffect, useState } from "react";
-import Checkbox from "@mui/material/Checkbox";
-import "./AddOns.css";
-import { addOnsData } from "../../const";
-import { AddOnsData } from "../../types";
+import React, { useState } from 'react'
+import Checkbox from '@mui/material/Checkbox'
+import './AddOns.css'
+import { addOnsData } from '../../const'
+import { AddOnsData } from '../../types'
 
 interface AddOns {
-  title: string;
-  subtitle: string;
-  price: number;
-  setAddons: any;
-  id: number;
-  addons: AddOnsData[];
+  title: string
+  subtitle: string
+  price: number
+  setAddons: React.Dispatch<React.SetStateAction<AddOnsData[] | []>>
+  id: number
+  addons?: AddOnsData[]
 }
 
 export const AddOns: React.FC<AddOns> = ({
@@ -21,36 +21,36 @@ export const AddOns: React.FC<AddOns> = ({
   setAddons,
   addons,
 }) => {
-  let addon: AddOnsData = addOnsData.find(
+  const addon: AddOnsData = addOnsData.find(
     (data) => data.id === id
-  ) as AddOnsData;
-  const isAddonsChecked = addons.includes(addon);
+  ) as AddOnsData
+  const isAddonsChecked = addons ? addons.includes(addon) : false
 
-  const [checked, setChecked] = useState<boolean>(isAddonsChecked);
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+  const [checked, setChecked] = useState<boolean>(isAddonsChecked)
+  const label = { inputProps: { 'aria-label': 'Checkbox demo' } }
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked(event.target.checked);
+    setChecked(event.target.checked)
 
     if (event.target.checked) {
-      addAddon();
+      addAddon()
     } else {
-      removeAddon();
+      removeAddon()
     }
-  };
+  }
 
   const addAddon = () => {
-    setAddons((prev: AddOnsData[]) => [...new Set([...prev, addon])]);
-  };
+    setAddons((prev: AddOnsData[]) => [...new Set([...prev, addon])])
+  }
 
   const removeAddon = () => {
-    setAddons((prev: AddOnsData[]) => prev.filter((data) => data !== addon));
-  };
+    setAddons((prev: AddOnsData[]) => prev.filter((data) => data !== addon))
+  }
 
   return (
     <>
       <div
-        className={`${checked ? "add-ons-card-active" : ""} flex add-ons-card`}
+        className={`${checked ? 'add-ons-card-active' : ''} flex add-ons-card`}
       >
         <Checkbox
           {...label}
@@ -69,5 +69,5 @@ export const AddOns: React.FC<AddOns> = ({
         </div>
       </div>
     </>
-  );
-};
+  )
+}

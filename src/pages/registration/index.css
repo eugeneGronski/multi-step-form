@@ -1,22 +1,11 @@
-.registration-containter {
-    border-radius: 24px;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-}
-
 .side-bar {
-    background: url('../../assets/images/bg-sidebar-desktop.svg');
-    background-repeat: no-repeat;
-    height: 568px;
-    width: 274px;
-    display: flex;
-    flex-direction: column;
+  background: url('../../assets/images/bg-sidebar-desktop.svg');
+  height: 568px;
+  width: 274px;
 }
 
 .form-container {
-    padding: 50px 80px;
-    border-radius: 12px;
-    width: 788px;
+  padding: 50px 80px;
+  border-radius: 12px;
+  width: 788px;
 }

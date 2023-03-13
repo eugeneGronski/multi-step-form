@@ -1,64 +1,64 @@
 import arcadeImage from './assets/images/icon-arcade.svg'
 import advancedImage from './assets/images/icon-advanced.svg'
 import proImage from './assets/images/icon-pro.svg'
-import { AddOnsData,  PlansData} from './types'
+import { AddOnsData, PlansData } from './types'
 
 export const stepData = [
   {
     id: 1,
-    subtitle: "Your Info"
+    subtitle: 'Your Info',
   },
   {
     id: 2,
-    subtitle: "Select Plan"
+    subtitle: 'Select Plan',
   },
   {
     id: 3,
-    subtitle: "Add-ons"
+    subtitle: 'Add-ons',
   },
   {
     id: 4,
-    subtitle: "Summary"
-  }
+    subtitle: 'Summary',
+  },
 ]
 export const plansData: PlansData[] = [
   {
     id: 1,
-    planName: "Arcade",
+    planName: 'Arcade',
     imgSrc: arcadeImage,
-    price: 9
+    price: 9,
   },
   {
     id: 2,
-    planName: "Advanced",
+    planName: 'Advanced',
     imgSrc: advancedImage,
-    price: 12
+    price: 12,
   },
   {
     id: 3,
-    planName: "Pro",
+    planName: 'Pro',
     imgSrc: proImage,
-    price: 15
+    price: 15,
   },
 ]
 
-export const addOnsData: AddOnsData[]  = [
+export const addOnsData: AddOnsData[] = [
   {
     id: 1,
-    title: "Online service",
-    subtitle: "Access to multiplayer games",
-    price: 1
+    title: 'Online service',
+    subtitle: 'Access to multiplayer games',
+    price: 1,
   },
   {
     id: 2,
-    title: "Larger storage",
-    subtitle: "Extra 1TB of cloud save",
-    price: 2
+    title: 'Larger storage',
+    subtitle: 'Extra 1TB of cloud save',
+    price: 2,
   },
   {
     id: 3,
-    title: "Customizible profile",
-    subtitle: "Custom theme on your profile",
-    price: 3
+    title: 'Customizible profile',
+    subtitle: 'Custom theme on your profile',
+    price: 3,
   },
 ]

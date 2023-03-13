@@ -1,10 +1,9 @@
-import React, { Dispatch, SetStateAction } from "react";
-import Button, { ButtonProps } from "@mui/material/Button";
+import Button from '@mui/material/Button'
 
 interface Button {
-  onClick: any,
-  innerText: string;
-  disabled: boolean;
+  onClick: () => void
+  innerText: string
+  disabled: boolean
 }
 
 export const FormButton: React.FC<Button> = ({
@@ -14,14 +13,9 @@ export const FormButton: React.FC<Button> = ({
 }) => {
   return (
     <>
-      <Button
-        // type="submit"
-        disabled={disabled}
-        size="medium"
-        onClick={onClick}
-      >
+      <Button disabled={disabled} size="medium" onClick={onClick}>
         {innerText}
       </Button>
     </>
-  );
-};
+  )
+}
